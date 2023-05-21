@@ -1,8 +1,6 @@
 #include<stdio.h>
-/**
-* program to print value of string
-*/
-int main(void)
+
+int main(void) /** printing string*/
 {
 	char print_string[] = "\"Programming is like building a multilingual puzzle";
 	/*using put function*/
