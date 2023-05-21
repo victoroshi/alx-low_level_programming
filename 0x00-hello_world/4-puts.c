@@ -2,6 +2,6 @@
 main()
 {
 	char print_string[] = "Programming is like building a multilingual puzzle";
-	puts(print_string);)
+	puts(print_string);
 	return 0;
 }
