@@ -1,3 +1,5 @@
+/*  C program that prints */
+
 #include<stdio.h>
 int main(void)
 {
