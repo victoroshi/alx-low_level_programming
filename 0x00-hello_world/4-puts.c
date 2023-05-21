@@ -1,5 +1,9 @@
 #include<stdio.h>
-/* Description: dispay output using the puts fuction */
+/**
+* Description: Write a C program that prints exactly 
+* "Programming is like building a multilingual puzzle, 
+* followed by a new line
+*/
 int main(void)
 {
 	char print_string[] = "\"Programming is like building a multilingual puzzle";
