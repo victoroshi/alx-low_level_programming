@@ -1,8 +1,8 @@
 #include<stdio.h>
 /**
-*Program to
-*dispay output
-*using the puts fuction
+* Main: Program Entry Pointo
+* Description: dispay output using the puts fuction
+* Retunr: always 0 (Success)
 */
 int main(void)
 {
