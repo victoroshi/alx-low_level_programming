@@ -1,8 +1,8 @@
 #include<stdio.h>
 /**
-* Main: Program Entry Pointo
+* Main: Program  to print string values
 * Description: dispay output using the puts fuction
-* Retunr: always 0 (Success)
+* Return: Always 0 (Success)
 */
 int main(void)
 {
