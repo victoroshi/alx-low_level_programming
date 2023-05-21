@@ -1,11 +1,7 @@
 #include<stdio.h>
 /**
-* This is the first line of code to
-* demontstrate the betty
-* style of coding
-* Description: Write a C program that prints exactly
-* "Programming is like building a multilingual puzzle,
-* followed by a new line
+* main - prints a text using printf function
+* Return: always 0
 */
 int main(void)
 {
