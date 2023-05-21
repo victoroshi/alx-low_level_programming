@@ -1,6 +1,5 @@
 #include<stdio.h>
 /**
-* Main: Program  to print string values
 * Description: dispay output using the puts fuction
 * Return: Always 0 (Success)
 */
