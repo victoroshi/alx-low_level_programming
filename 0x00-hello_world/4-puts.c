@@ -1,7 +1,7 @@
 #include<stdio.h>
 /**
-* This is the first line of code to 
-* demontstrate the betty 
+* This is the first line of code to
+* demontstrate the betty
 * style of coding
 * Description: Write a C program that prints exactly
 * "Programming is like building a multilingual puzzle,
