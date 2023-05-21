@@ -1,5 +1,5 @@
 #include<stdio.h>
-/** 
+/**
 * program to print value of string
 */
 int main(void)
