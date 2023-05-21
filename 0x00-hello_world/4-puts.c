@@ -1,5 +1,6 @@
 #include<stdio.h>
-int main(void) /*  C program that prints */
+/*  C program that prints */
+int main(void)
 {
 	char print_string[] = "\"Programming is like building a multilingual puzzle";
 
