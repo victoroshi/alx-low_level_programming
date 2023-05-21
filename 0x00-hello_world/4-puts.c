@@ -1,7 +1,5 @@
-/*  C program that prints */
-
 #include<stdio.h>
-int main(void)
+int main(void) /*  C program that prints */
 {
 	char print_string[] = "\"Programming is like building a multilingual puzzle";
 
