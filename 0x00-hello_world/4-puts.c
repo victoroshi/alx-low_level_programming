@@ -1,8 +1,8 @@
 #include<stdio.h>
 /**
-* Program to 
-* dispay output
-* using the puts fuction
+*Program to
+*dispay output
+*using the puts fuction
 */
 int main(void)
 {
