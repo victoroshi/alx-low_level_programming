@@ -1,6 +1,10 @@
 #include<stdio.h>
-
-int main(void) /** printing string*/
+/**
+* Program to 
+* dispay output
+* using the puts fuction
+*/
+int main(void)
 {
 	char print_string[] = "\"Programming is like building a multilingual puzzle";
 	/*using put function*/
