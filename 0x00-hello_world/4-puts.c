@@ -1,8 +1,5 @@
 #include<stdio.h>
-/**
-* Description: dispay output using the puts fuction
-* Return: Always 0 (Success)
-*/
+/* Description: dispay output using the puts fuction */
 int main(void)
 {
 	char print_string[] = "\"Programming is like building a multilingual puzzle";
