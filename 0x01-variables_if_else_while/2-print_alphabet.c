@@ -9,7 +9,6 @@ int main(void)
 
     for (alpha = 'a'; alpha <= 'z' ; alpha++)
     {
-        // print the value of the variable 
         putchar(alpha);
 
     }
