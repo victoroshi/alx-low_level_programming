@@ -2,9 +2,9 @@
 #include <time.h>
 /* more headers goes there */
 #include <stdio.h>
-/* betty style doc for function main goes there */
-/** 
-* main : program to assign a random number to the variable n 
+/**
+* main - program that prints randon numbers
+* Return: always 0
 */
 int main(void)
 {
@@ -15,15 +15,15 @@ int main(void)
 	/* your code goes there */
 	if (n > 0)
 	{
-		printf("is positive \n");
+		printf("is positive \n", n);
 	}
 	else if (n == 0)
 	{
-		printf("is zero \n");
-	} 
-	else 
+		printf("is zero \n", n);
+	}
+	else
 	{
-		printf("is negative \n");
+		printf("is negative \n", n);
 	}
 	return (0);
 }
