@@ -1,3 +1,4 @@
+#include <limits.h>
 #include<stdio.h>
 /**
 * main - prints a text using printf function
