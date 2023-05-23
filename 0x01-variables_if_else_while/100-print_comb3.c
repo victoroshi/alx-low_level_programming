@@ -27,7 +27,6 @@ int main()
 			{
 				putchar(i + '0'); /* print the first digit */
 				putchar(j + '0'); /* print the second digit */
-				/* putchar('\n'); /* get the newline printed */
 			}
 		}
 	}
