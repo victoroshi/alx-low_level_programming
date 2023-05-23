@@ -2,13 +2,14 @@
 
 /**
 * main - main block
-* Description: Write a program that prints all possible different combinations of two digits.
+* Description: program that prints all possible different
+* combinations of two digits.
 * Numbers must be separated by ,, followed by a space
 * The two digits must be different
-* 01 and 10 are considered the same combination of the two digits 0 and 1
+* 01 and 10 are considered the same combination
 * Print only the smallest combination of two digits
 * Numbers should be printed in ascending order, with two digits
-* You can only use the putchar function (every other function (printf, puts, etc…) is forbidden)
+* You can only use the putchar function
 * You can only use putchar five times maximum in your code
 * You are not allowed to use any variable of type char
 * Return: 0 Always
@@ -26,7 +27,7 @@ int main()
 			{
 				putchar(i + '0'); /* print the first digit */
 				putchar(j + '0'); /* print the second digit */
-				putchar('\n'); /* get the newline printed */
+				/* putchar('\n'); /* get the newline printed */
 			}
 		}
 	}
