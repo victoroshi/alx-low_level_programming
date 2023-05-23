@@ -25,8 +25,8 @@ int main(void)
 		{
 			if (i != j) /* Exclude any combinations with the same digit */
 			{
-				putchar(i + '0'); /* print the first digit */
-				putchar(j + '0'); /* print the second digit */
+				putchar('0' + i); /* print the first digit */
+				putchar('0' + j); /* print the second digit */
 				putchar(',');
 				putchar(' ');
 			}
