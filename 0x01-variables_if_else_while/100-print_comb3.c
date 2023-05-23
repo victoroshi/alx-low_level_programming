@@ -18,18 +18,20 @@
 int main(void)
 {
 	int i, j;
-	/* Loop to iterate through all possible combinations */
-	for (i = 0; i <= 9; i++)
+
+	for (i = '0'; i <= '9'; i++)
 	{
-		for (j = i + 1; j <= 9; j++)
+		for (j = i + 1; j <= '9'; j++)
 		{
-			if (i != 8 || j != 9)
+			putchar(i);
+			putchar(j);
+			if (i != '8' || j != '9')
 			{
-				putchar('0' + i); /* print the first digit */
-				putchar('0' + j); /* print the second digit */
 				putchar(',');
-				putchar(' ');			}
+				putchar(' ');
+			}
 		}
 	}
+	putchar('\n');
 	return (0);
 }
