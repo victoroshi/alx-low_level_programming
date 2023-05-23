@@ -15,7 +15,7 @@
 * Return: 0 Always
 */
 
-int main()
+int main(void)
 {
 	int i, j;
 	/* Loop to iterate through all possible combinations */
@@ -27,6 +27,7 @@ int main()
 			{
 				putchar(i + '0'); /* print the first digit */
 				putchar(j + '0'); /* print the second digit */
+				putchar(',' + '0');
 			}
 		}
 	}
