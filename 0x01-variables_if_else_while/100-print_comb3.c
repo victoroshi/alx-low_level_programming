@@ -21,9 +21,9 @@ int main(void)
 	/* Loop to iterate through all possible combinations */
 	for (i = 0; i <= 9; i++)
 	{
-		for (j = 0; j <= 9; j++)
+		for (j = i + 1; j <= 9; j++)
 		{
-			if (i != '8' || j != '9') /* Exclude any combinations with the same digit */
+			if (i != j) /* Exclude any combinations with the same digit */
 			{
 				putchar('0' + i); /* print the first digit */
 				putchar('0' + j); /* print the second digit */
