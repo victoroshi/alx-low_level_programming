@@ -23,7 +23,7 @@ int main(void)
 	{
 		for (j = i + 1; j <= 9; j++)
 		{
-	0		if (i != j)
+			if (i != j)
 			{
 				putchar('0' + i); /* print the first digit */
 				putchar('0' + j); /* print the second digit */
