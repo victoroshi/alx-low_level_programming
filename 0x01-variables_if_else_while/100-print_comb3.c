@@ -23,15 +23,13 @@ int main(void)
 	{
 		for (j = i + 1; j <= 9; j++)
 		{
-			if (i == 8 || j == 9)
+	0		if (i != j)
 			{
 				putchar('0' + i); /* print the first digit */
 				putchar('0' + j); /* print the second digit */
-				putchar(',');
 				putchar(' ');
 			}
 		}
 	}
-	putchar('\n');
 	return (0);
 }
