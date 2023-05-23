@@ -28,7 +28,7 @@ int main(void)
 				putchar('0' + i); /* print the first digit */
 				putchar('0' + j); /* print the second digit */
 				putchar(' ');
-			}
+				putchar(',');			}
 		}
 	}
 	return (0);
