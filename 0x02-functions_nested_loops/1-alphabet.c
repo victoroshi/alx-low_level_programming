@@ -1,9 +1,11 @@
 #include "main.h"
 
 /**
-* Description: a is a character data type
-* Print_alphabet: prints lowercase alphabet.
-*/
+ * print_alphabet - prints alphabet
+ *
+ * Return: always 0;
+ *
+ */
 void print_alphabet(void)
 {
 	char alpha = 'a';
