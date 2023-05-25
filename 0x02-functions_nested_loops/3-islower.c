@@ -4,9 +4,8 @@
 * int _islower - checks for lowercase character
 * Description: Write a function that checks for lowercase character
 */
-int _islower(int c);
+int _islower(int c)
 {
-	char c;
 
 	if (c >= 'a' && c <= 'z')
 	{
