@@ -3,8 +3,8 @@
 
 /**
   * print_to_98 - print digit number from  0 t0 98
-  * @num: this is the starting index
-  * Return: Returns the num
+  * @n: this is the starting index
+  * Return: Returns the numbers
   */
 void print_to_98(int n)
 {
