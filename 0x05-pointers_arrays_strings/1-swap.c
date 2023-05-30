@@ -6,9 +6,9 @@
 *
 * Return always 0;
 */
-void swap_int(int *a, int *b)
+void swap_int(int *j, int *k)
 {
-	int i = *j;
-	*j = *k;
-	*k = *i;
+	int swap = *k;
+	*k = *j;
+	*j = swap;
 }
