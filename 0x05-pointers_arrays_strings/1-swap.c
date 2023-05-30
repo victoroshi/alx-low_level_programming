@@ -2,11 +2,11 @@
 #include <stdio.h>
 
 /**
-* main - main fuction that check the code
-* @swap: swap the value of j with k
-* @j pointer to the first variable
-* @k pointer to the second variable
-* Return always 0;
+* swap_int - swaps the  values of two int pointer variables
+* @j: pointer to tehe first variable
+* @k: pointer to the second variable
+*
+* Return: void
 */
 void swap_int(int *j, int *k)
 {
