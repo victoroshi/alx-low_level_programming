@@ -7,7 +7,7 @@
 * @a: this is the pointer to the array
 * @n: the numbers of teh array that will be printed
 */
-void print_array(int *a, int n);
+void print_array(int *a, int n)
 {
 	int i;
 
