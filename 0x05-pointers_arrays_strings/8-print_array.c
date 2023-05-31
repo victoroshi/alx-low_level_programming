@@ -1,9 +1,9 @@
-#include <stdio.h>
+	#include <stdio.h>
 #include "main.h"
 
 /**
 * main - checking the main function
-* print_array - array to be check for iteration
+* print_array - print array of integer follow by a new line
 * @a: this is the pointer to the array
 * @n: the numbers of teh array that will be printed
 */
