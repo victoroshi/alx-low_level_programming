@@ -4,8 +4,10 @@
 /**
 * main - checking the main function
 * print_array - print array of integer follow by a new line
+*
 * @a: this is the pointer to the array
 * @n: the numbers of teh array that will be printed
+* Return nothing 
 */
 void print_array(int *a, int n)
 {
