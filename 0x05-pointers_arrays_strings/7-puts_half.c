@@ -11,6 +11,7 @@ void puts_half(char *str)
 {
 	int count = 0;
 	int i, newStart;
+
 	while (str[count] != '\0')
 		count++;
 	if (count % 2 == 0)
