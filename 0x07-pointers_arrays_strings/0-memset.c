@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
-  * _memset: fills the first n bytes of the  memory
+  * _memset - fills the first n bytes of the  memory
   * area pointed to by s with the constant byte b
   * @s: this is the pointer to the array character
   * @n: maxsize that the character string can take
@@ -13,6 +13,7 @@
 char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int i;
+
 	for (i = 0; i < n; i++)
 	{
 		s[i] = b;
