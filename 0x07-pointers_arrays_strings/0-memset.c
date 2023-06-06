@@ -7,6 +7,7 @@
   * @s: this is the pointer to the array character
   * @n: maxsize that the character string can take
   * @b: the constant byte
+  *
   * Return: pointer to the memory area s
   */
 char *_memset(char *s, char b, unsigned int n)
