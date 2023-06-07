@@ -2,8 +2,8 @@
 #include "main.h"
 
 /**
-* main - print string follow by new line
-* _puts_recursion - print strings of elements recursively
+* _puts_recursion - print strings of elements recursively like 'puts'
+*
 * @s: pointer to the string charcaters
 * Return always 0
 */
