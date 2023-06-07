@@ -3,6 +3,7 @@
 
 /**
 * main - print string follow by new line
+* _puts_recursion: print strings of elements recursively
 * @s: pointer to the string charcaters
 * Return always 0
 */
