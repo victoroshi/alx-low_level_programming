@@ -2,10 +2,9 @@
 
 /**
  * main - check the code
- * _print_rev_recursion - function to call that will 
- * print the string in a reverse format
+ * _print_rev_recursion - prints a string in reverse
  * @s: pointer to the value of s
- * Return: Always 0.
+ * Return: return void
  */
 void _print_rev_recursion(char *s)
 {
