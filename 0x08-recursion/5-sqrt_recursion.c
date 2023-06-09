@@ -1,27 +1,35 @@
 #include "main.h"
-#include <stdio.h>
+
+int _compute_sqrt(int c, int guess);
 /**
-  * _sqrt_recursion - get square roots
-  * @n: an integer value
+  * _compute_sqrt - get square roots and perfect squares by guesses
+  * @guess: random picker of square roots
+  * @c: base number
+  *
+  * Return: returns square root
+  */
+int _compute_sqrt(int c, int guess)
+{
+	if (guess * guess == c)
+	{
+		return (guess);
+	}
+	else if (guess * guess > c)
+	{
+		return (-1);
+	}
+	else
+	{
+		return (_compute_sqrt(c, guess + 1));
+	}
+}
+/**
+  * _sqrt_recursion - determine square roots
+  * @n: base number
   *
   * Return: returns square root
   */
 int _sqrt_recursion(int n)
 {
-	return (_sqrt2(1, n));
-}
-/**
- *_sqrt2 - find the square of given number
- *@a: an integer variable
- *@b: an integer variable
- *Return: square root
- */
-int _sqrt2(int a, int b)
-{
-	if (a * a > b)
-		return (-1);
-	else if (a * a == b)
-		return (a);
-	else
-		return (_sqrt2(a += 1, b));
+	return (_compute_sqrt(n, 1));
 }
