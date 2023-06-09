@@ -7,19 +7,18 @@
   *
   * Return: returns square root
   */
-int _sqrt_recursion(int i, int j)
+int helper(int i, int n)
 {
-	if (j * j == i)
-	{
-		return (j);
-	}
-	else if (j * j > i)
-	{
-		return (-1);
-	}
-	else
-	{
-		return (_sqrt_recursion(i, j + 1));
-	}
-}
+	int j;
 
+	if (i * i != n)
+	{
+		if (i > n)
+		{
+			return (-1);
+		}
+		j = helper(i + 1, n);
+		return (j + 1);
+	}
+	return (0);
+}
