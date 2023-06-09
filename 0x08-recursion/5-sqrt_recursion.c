@@ -11,7 +11,7 @@ int _compute_sqrt(int i, int j);
   */
 int _compute_sqrt(int i, int j)
 {
-	if (guess * j == i)
+	if (j * j == i)
 	{
 		return (j);
 	}
@@ -25,13 +25,3 @@ int _compute_sqrt(int i, int j)
 	}
 }
 
-/**
-  * _sqrt_recursion - determine square roots of number
-  * @n: this is the base number
-  *
-  * Return: returns the square root
-  */
-int _sqrt_recursion(int n)
-{
-	return (_compute_sqrt(n, 1));
-}
