@@ -1,7 +1,5 @@
 #include "main.h"
 
-int _sqrt_recursion(int i, int j);
-
 /**
   * _compute_sqrt - get square roots and perfect squares by j
   * @j: random picker of square roots
@@ -21,7 +19,7 @@ int _sqrt_recursion(int i, int j)
 	}
 	else
 	{
-		return (_compute_sqrt(i, j + 1));
+		return (_sqrt_recursion(i, j + 1));
 	}
 }
 
