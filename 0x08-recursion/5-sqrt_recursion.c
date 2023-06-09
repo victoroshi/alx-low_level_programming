@@ -1,6 +1,6 @@
 #include "main.h"
 
-int _compute_sqrt(int i, int j);
+int _sqrt_recursion(int i, int j);
 
 /**
   * _compute_sqrt - get square roots and perfect squares by j
@@ -9,7 +9,7 @@ int _compute_sqrt(int i, int j);
   *
   * Return: returns square root
   */
-int _compute_sqrt(int i, int j)
+int _sqrt_recursion(int i, int j)
 {
 	if (j * j == i)
 	{
