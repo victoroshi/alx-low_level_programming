@@ -7,18 +7,22 @@
   *
   * Return: returns square root
   */
-int helper(int i, int n)
+int _sqrt_recursion(int n)
 {
-	int j;
-
-	if (i * i != n)
-	{
-		if (i > n)
-		{
-			return (-1);
-		}
-		j = helper(i + 1, n);
-		return (j + 1);
-	}
-	return (0);
+	return (_sqrt2(1, n));
+}
+/**
+ *_sqrt2 - find square of numbers
+ *@a: an integer variable
+ *@b: an integer variable
+ *Return: value square
+ */
+int _sqrt2(int a, int b)
+{
+	if (a * a > b)
+		return (-1);
+	else if (a * a == b)
+		return (a);
+	else
+		return (_sqrt2(a += 1, b));
 }
