@@ -6,7 +6,7 @@
  * @argv: pointer to string array pointing to arguements
  * Return: exit code 0
  */
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
     int count;
 
