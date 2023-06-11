@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
 * main - print name follow by a new line
 * @argc: counter for the argument
