@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - prints all arguments it receives per line
- * @argc: count no of args passed
+ * main - prints all arguments it receives per line, & \n
+ * @argc: count args passed
  * @argv: pointer to string array pointing to arguements
  * Return: exit code 0
  */
