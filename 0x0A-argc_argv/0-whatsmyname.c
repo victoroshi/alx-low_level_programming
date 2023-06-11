@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include "main.h"
 /**
 * main - print name follow by a new line
 * @argc: counter for the argument
