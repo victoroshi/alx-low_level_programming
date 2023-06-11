@@ -1,13 +1,12 @@
 #include <stdio.h>
-
 /**
- * main - prints the count of args passed, followed by \n
- * @argc: the count for args
- * @argv: pointer to the string array pointing to elements
- * Return: exit code 0
+ * main - point
+ * @argc: string
+ * @argv: array
+ * Return: 0
  */
 int main(int argc, __attribute__((unused)) char *argv[])
 {
-	printf("%s\n", argc -1);
+	printf("%d\n", argc -1);
 	return (0);
 }
