@@ -2,10 +2,10 @@
 #include <stdlib.h>
 
 /**
- * main - prints all arguments it receives per line, & \n
+ * main - print the result of the multiplication, followed by a new line
  * @argc: count args passed
  * @argv: pointer to string array pointing to arguements
- * Return: exit code 1 for error and 0 for success
+ * Return: exit  code 0
  */
 int main(int argc, char **argv)
 {
@@ -16,8 +16,8 @@ int main(int argc, char **argv)
         printf("Error\n");
         return (1);
     }
-i = atoi(argv[1]);
-j = atoi(argv[2]);
-printf("%d\n", i * j);
-return (0);
+    i = atoi(argv[1]);
+    j = atoi(argv[2]);
+    printf("%d\n", i * j);
+    return (0);
 }
