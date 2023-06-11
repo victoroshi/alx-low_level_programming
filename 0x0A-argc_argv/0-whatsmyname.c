@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
-* main - the main program for execution
-* @argc: an integer counter for array value
-* @argv: a character sring for array elements
-* Return 0 always
+* main - print name follow by a new line
+* @argc: counter for the argument
+* @argv: pointer to the string in an array
+* Return: exit code 0
 */
 int main(int argc, char *argv[])
 {
