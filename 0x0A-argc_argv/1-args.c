@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - prints the count of args passed, followed by new line
+ * main - prints the count of args passed, followed by \n
  * @argc: the count for args
  * @argv: pointer to the string array pointing to elements
  * Return: exit code 0
