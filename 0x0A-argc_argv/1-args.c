@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - prints the count of args passed, followed by \n
- * @argc: the count for the argument
+ * main - prints the count of args passed, followed by new line
+ * @argc: the count for args
  * @argv: pointer to the array element
  * Return: exit code 0
  */
