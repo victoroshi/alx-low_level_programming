@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "main.h"
 /**
 * main - print name follow by a new line
 * @argc: counter for the argument
@@ -9,6 +8,7 @@
 int main(int argc, char *argv[])
 {
 	(void) argc;
-	_putchar("%s\n", argv[0]);
+
+	printf("%s\n", argv[0]);
 	return 0;
 }
