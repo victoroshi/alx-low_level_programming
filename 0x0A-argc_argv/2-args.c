@@ -4,7 +4,6 @@
  * main - prints all arguments it receives per line
  * @argc: count no of args passed
  * @argv: pointer to string array pointing to arguements
- * @count: counter for the element in argc
  * Return: exit code 0
  */
 int main(int argc, char* argv[])
