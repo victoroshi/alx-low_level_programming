@@ -9,6 +9,7 @@
 int main(int argc, __attribute__((unused)) char* argv[])
 {
     int count;
+
     for (count = 0; count < argc; count++)
     {
         printf("%s\n", argv[count]);
