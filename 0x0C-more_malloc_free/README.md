@@ -3,3 +3,4 @@
 ### General
 - How to use the exit function
 - What are the functions calloc and realloc from the standard library and how to use them
+- Tackle some projects that relates to malloc
