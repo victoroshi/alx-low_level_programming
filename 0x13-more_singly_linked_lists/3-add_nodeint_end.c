@@ -3,7 +3,7 @@
 /**
  * add_nodeint_end - adds node to the end of a list
  * @head: head pointer
- * @n: expected data to be added to the head
+ * @n: expected data to be added to the head of the list
  * Return: newly created node
  */
 listint_t *add_nodeint_end(listint_t **head, const int n)
