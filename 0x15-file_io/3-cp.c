@@ -1,83 +1,83 @@
 #include "main.h"
-#include <stdlib.h>
-#include <unistd.h>
-#include <fcntl.h>
-#include <stdio.h>
 
 /**
- * file1fail - Print error message if can't read file
- * @file: Name of the file that can't be read
+ * main - Copy file content from one source to another
+ * @argc: no if arg
+ * @argv: vector arg
+ * Return: 0 if when file copy is successful OR 97-100 whenfauled
  */
-void file1fail(char *file)
+int main(int argc, char *argv[])
+{
+	int copy_from, fto, copy_status;
+	char buffer[1024];
+	ssize_t size;
+
+	if (argc != 3)
+		args_error();
+
+	copy_from = open(argv[1], O_RDONLY);
+	if (copy_from == -1)
+		f_from_error(argv[1]);
+
+	fto = open(argv[2], O_CREAT | O_TRUNC | O_WRONLY, 0664);
+	if (fto == -1)
+		f_to_error(argv[2]);
+
+	while ((size = read(copy_from, buffer, 1024)) > 0)
+	{
+		if (write(fto, buffer, size) != size)
+			f_to_error(argv[2]);
+	}
+
+	if (size == -1)
+		f_from_error(argv[1]);
+
+	copy_status = close(copy_from);
+	if (copy_status == -1)
+		copy_error(copy_from);
+
+	copy_status = close(fto);
+	if (copy_status == -1)
+		c_error(fto);
+
+	return (0);
+}
+
+/**
+ * args_error - Print error and exit if wrong number of arguments is passed
+ */
+void args_error(void)
+{
+	dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
+	exit(97);
+}
+
+/**
+ * f_from_error - Print error and exit
+ * @file: file name
+ */
+void f_from_error(char *file)
 {
 	dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file);
 	exit(98);
 }
 
 /**
- * file2fail - Print error message if can't write to file
- * @file: Name of the file that can't be write to
+ * f_to_error - Print error and exit
+ * @file: file name
  */
-void file2fail(char *file)
+void f_to_error(char *file)
 {
 	dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file);
 	exit(99);
 }
 
 /**
- * closefail - Print error message if file can't close
- * @fd: File descriptor of the file
+ * c_error - Print error and exit if the close fails
+ * @fd: file descriptor
  */
-void closefail(int fd)
+void c_error(int fd)
 {
 	dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
 	exit(100);
-}
-
-/**
-  * main - copy the content of one file
-  * @argc: Number of args
-  * @argv: Array of args
-  * Return: 0 on success
-  */
-int main(int argc, char *argv[])
-{
-	int file1, file2, file1read, file2write, closed;
-	char buffer[BUFSIZE];
-	mode_t mode = S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH;
-
-	if (argc != 3)
-	{
-		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
-		exit(97);
-	}
-	if (argv[1] == NULL)
-		file1fail(argv[1]);
-	if (argv[2] == NULL)
-		file2fail(argv[2]);
-	file1 = open(argv[1], O_RDONLY);
-	if (file1 == -1)
-		file1fail(argv[1]);
-	file2 = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, mode);
-	if (file2 == -1)
-		file2fail(argv[2]);
-	file1read = read(file1, buffer, BUFSIZE);
-	if (file1read == -1)
-		file1fail(argv[1]);
-	while (file1read > 0)
-	{
-		file2write = write(file2, buffer, file1read);
-		if (file2write != file1read)
-			file2fail(argv[2]);
-		file1read = read(file1, buffer, BUFSIZE);
-		if (file1read == -1)
-			file1fail(argv[1]);
-	}
-	closed = close(file1);
-	if (closed == -1)
-		closefail(file1);
-	closed = close(file2);
-	if (closed == -1)
-		closefail(file2);
-	return (0);
 }
