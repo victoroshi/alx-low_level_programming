@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/** Description: C program to use the puts function
+/*
  * main - This is the entry point
  *
  * @char: string to be displayed to the standard output
