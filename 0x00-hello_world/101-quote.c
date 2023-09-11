@@ -9,8 +9,9 @@
  */
 int main(void)
 {
-	char myString[] =  "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";	
-	write(STDOUT_FILENO, myString, sizeof(myString) - 1);
+	char s[] =  "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+
+	write(STDOUT_FILENO, s, sizeof(s) - 1);
 	return (1);
 }
 
