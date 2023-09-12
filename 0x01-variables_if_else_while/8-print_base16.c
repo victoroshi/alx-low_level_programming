@@ -2,7 +2,7 @@
 
 /**
  * main - entry point
- * description: program that prints number 0 through 9.
+ * description: printing numbers of base 16 in lowercase
  *
  * Return: always (0)
  */
