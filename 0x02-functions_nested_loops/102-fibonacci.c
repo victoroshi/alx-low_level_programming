@@ -15,10 +15,12 @@ int main(void)
 	int nextNum;
 
 	printf("%d,  %d, ", n1, n2);
-	while (i <= 20)
+	while (i <= 50)
 	{
 		nextNum = n1 + n2;
-		if (i == 20)
+		n1 = n2;
+		n2 = nextNum;
+		if (i == 50)
 		{
 			printf("%d", nextNum);
 		}
@@ -26,8 +28,6 @@ int main(void)
 		{
 			printf("%d, ", nextNum);
 		}
-		n1 = n2;
-		n2 = nextNum;
 		i++;
 	}
 	printf("\n");
