@@ -21,8 +21,8 @@ int main(void)
 		{
 			sum += n2;
 		}
-		tmp = n2;
-		n1= n2;
+		tmp = n1;
+		n1 = n2;
 		n2 = tmp + n1;
 	}
 		printf("%d\n", sum);
