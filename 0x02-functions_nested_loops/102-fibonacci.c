@@ -14,7 +14,7 @@ int main(void)
 	unsigned long i = 3;
 	unsigned long nextNum;
 
-	printf("%lu,  %lu, ", n1, n2);
+	printf("%lu, %lu, ", n1, n2);
 	while (i <= 50)
 	{
 		nextNum = n1 + n2;
@@ -29,7 +29,7 @@ int main(void)
 		n1 = n2;
 		n2 = nextNum;
 		i++;
-        }
-        printf("\n");
-        return (0);
+	}
+		printf("\n");
+		return (0);
 }
