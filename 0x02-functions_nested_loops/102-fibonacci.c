@@ -12,24 +12,24 @@ int main(void)
 	int n1 = 1;
 	int n2 = 2;
 	int i = 3;
-	int nextNum;
+	unsigned int nextNum;
 
 	printf("%d,  %d, ", n1, n2);
 	while (i <= 50)
 	{
 		nextNum = n1 + n2;
-		n1 = n2;
-		n2 = nextNum;
 		if (i == 50)
 		{
-			printf("%d", nextNum);
+			printf("%u", nextNum);
 		}
 		else
 		{
-			printf("%d, ", nextNum);
+			printf("%u, ", nextNum);
 		}
+		n1 = n2;
+		n2 = nextNum;
 		i++;
-	}
-	printf("\n");
-	return (0);
+        }
+        printf("\n");
+        return (0);
 }
