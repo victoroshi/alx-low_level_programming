@@ -1,4 +1,4 @@
-nclude "main.h"
+#include "main.h"
 
 /**
   * main - function that test in number is 0 or negative
