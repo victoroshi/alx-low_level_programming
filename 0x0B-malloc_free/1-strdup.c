@@ -4,7 +4,7 @@
  * _strdup - return pointer to any given string of characters
  * @str: this is the string to be duplicated
  *
- * Return: The pointer to the new string or NULL when it failed to create a memory
+ * Return: pointer to the string or NULL when it failed to create a memory
  */
 char *_strdup(char *str)
 {
