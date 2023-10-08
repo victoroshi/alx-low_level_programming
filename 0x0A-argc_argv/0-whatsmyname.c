@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 /**
+ * main - entry point
  * prints its name, followed by a new line
  * @argc: count the args passed to the function
  * @argv: pointer to string array
