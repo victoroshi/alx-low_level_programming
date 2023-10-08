@@ -2,48 +2,48 @@
 #include <stdlib.h>
 
 /**
- * main - bare minimal number of coins for change followed by \n
- * @argc: count args passed
- * @argv: pointer to string array pointing to arguements
- * Return: exit code always 0
- */
-int main(int argc, char **argv)
-{
-	int cents, coins = 0;
+* main - entry main
+* @argc: number of command line arguments
+* @argv: An array containing the program command line arguments
+*
+* Return: Always success.
+*/
 
-	if (argc != 2)
+int main(int argc, char *argv[])
+{
+	int change, c25 = 0, c10 = 0, c5 = 0, c2 = 0, c1 = 0;
+
+	if (argc - 1 != 1)
 	{
 		printf("Error\n");
 		return (1);
 	}
 
-	cents = atoi(argv[1]);
-
-	while (cents > 0)
+	if (atoi(argv[1]) < 0)
+		printf("0\n");
+	else
 	{
-		coins++;
-		if ((cents - 25) >= 0)
+		change = atoi(argv[1]);
+		if (change >= 25)
 		{
-			cents -= 25;
-			continue;
-		}
-		else if ((cents - 10) >= 0)
+			c25 = change / 25;
+			change = change % 25; }
+		if (change >= 10)
 		{
-			cents -= 10;
-			continue;
-		}
-		else if ((cents - 5) >= 0)
+			c10 = change / 10;
+			change = change % 10; }
+		if (change >= 5)
 		{
-			cents -= 5;
-			continue;
-		}
-		else if ((cents - 2) >= 0)
+			c5 = change / 5;
+			change = change % 5; }
+		if (change >= 2)
 		{
-			cents -= 2;
-			continue;
-		}
-		cents--;
+			c2 = change / 2;
+			change = change % 2; }
+		if (change >= 1)
+			c1 = change;
+
+		printf("%d\n", c25 + c10 + c5 + c2 + c1);
 	}
-
-	printf("%d\n", coins);
-
+return (0);
+}
