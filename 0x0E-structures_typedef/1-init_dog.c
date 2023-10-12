@@ -3,7 +3,7 @@
 
 /**
  * init_dog - initialization of the dog structure
- * @d: pointer 
+ * @d: pointer
  * @name: character string
  * @age: float
  * @owner: character string
