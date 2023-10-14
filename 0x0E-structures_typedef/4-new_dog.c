@@ -1,6 +1,5 @@
 #include <stdlib.h>
 #include "dog.h"
-#include "holberton.h"
 
 /**
  * _strlen - return string lenght
