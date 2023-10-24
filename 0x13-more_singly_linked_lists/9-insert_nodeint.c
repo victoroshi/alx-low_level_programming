@@ -2,41 +2,47 @@
 
 /**
  * insert_nodeint_at_index - inserts a new node at a given position
- * @head: the start of the list
- * @idx: the point where node is expected to be added
- * @n: integer value to store the new node
+ * @head: this is the head of the node
+ * @index: index of list where the new node is expected to be added
+ * @n: node data
  *
- * Return: listint_t, the address of the new node.
+ * Return: new node address, or NULL if otherwise
  */
-listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
+listint_t *insert_nodeint_at_index(listint_t **head, unsigned int index, int n)
 {
-	listint_t *new_node, *temp, *var;
-	unsigned int i = 0;
+	listint_t *new_node;
+	listint_t *tmp;
+	unsigned int i;
 
-	var = *head;
-	if (*head == NULL)
+	new_node = malloc(sizeof(listint_t));
+	if (new_node == NULL)
 		return (NULL);
-	while ((i < idx) && (head != NULL))
+	new_node->n = n;
+	new_node->next = NULL;
+	tmp = *head;
+	i = 0;
+	if (*head == NULL && index > 0)
 	{
-		var = (var)->next;
-		i++;
-		if (i == (idx - 1)) /* holding address of previous node */
-			temp = var;
+		free(new_node);
+		return (NULL);
 	}
-	if (head == NULL)
-		return (NULL);
-	if (i == idx)
+	if (index == 0)
 	{
-		new_node = malloc(sizeof(listint_t));
-		if (new_node == NULL)
-			return (NULL);
-		if (idx == 0)
-			*head = new_node;
-		new_node->next = var;
-		new_node->n = n;
-		if (idx > 0)
-			temp->next = new_node; /* previous node ->next to new */
+		new_node->next = *head;
+		*head = new_node;
 		return (new_node);
 	}
-	return (NULL);
+	while (i < index - 1)
+	{
+		tmp = tmp->next;
+		if (tmp == NULL && index - i > 0)
+		{
+			free(new_node);
+			return (NULL);
+		}
+		i++;
+	}
+	new_node->next = tmp->next;
+	tmp->next = new_node;
+	return (new_node);
 }
