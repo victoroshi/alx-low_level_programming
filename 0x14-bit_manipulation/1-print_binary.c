@@ -6,7 +6,7 @@
  */
 void print_binary(unsigned long int n)
 {
-	unsigned int var;
+	unsigned int value;
 
 	value = n & 1;
 	n = n >> 1;
